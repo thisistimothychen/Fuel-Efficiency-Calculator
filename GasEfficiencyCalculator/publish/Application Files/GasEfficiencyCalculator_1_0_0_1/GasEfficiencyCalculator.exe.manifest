@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="GasEfficiencyCalculator.exe" version="1.0.0.1" publicKeyToken="854244d9238da192" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="fuel-512.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GasEfficiencyCalculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="GasEfficiencyCalculator.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GasEfficiencyCalculator.exe" size="764832">
+      <assemblyIdentity name="GasEfficiencyCalculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Vc4SLihLz4UE5FB8vBFaanPLXaaNXAUJffLRCs71oZs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="fuel-512.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MqM2hm8cjZoTdeQGf9IjR7CfbLQ7SXHiZHgnDEy4x+4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GasEfficiencyCalculator.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Tim-PC\Tim" issuerKeyHash="a79276083151aa69905ae975c65d6560da31d916" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PDlUkdHKApfl0m/bXjhWhAnoBoZSxG0xi0XrdSjt7qY=</DigestValue></Reference></SignedInfo><SignatureValue>hZpvVpkAW6RwGahBr0R8m/uUGWKooGlNdGo+LPpfFc8oWfxr8xQQc+TWa2M/vNk3OM8yqF+VPAblic/sv7HmxnwX+dtLVGQK1j8upf7cvyf+ybWp2LQlkoVxTGxYLcb3iNA66b+or5w1D6Y0MkYhy9476xODpr0wqO/X+AoBQSc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xtrMr9hlSPjCg/VUufB/5Hgq66UOsqLYtJ1tQW5S52R9z6lx15W71DRsPhvje82LvhvhUMT8dUD8PnAD7wK7r3ZfHTPOav+W0HzAjNfmxPaLy5fR8DP2kVRmm/MbFG10oxQm9NSBPuddXcLTRJ7Y8rdS0QipBTesf4PpY6hlKSs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a6eeed2875eb458b316dc4528606e8098456385edb6fd2e59702cad19154393c" Description="" Url=""><as:assemblyIdentity name="GasEfficiencyCalculator.exe" version="1.0.0.1" publicKeyToken="854244d9238da192" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Tim-PC\Tim</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5k1z3nEe0vM1oqkInaZSQ6Hdiflf7IG+A6cmbClGUak=</DigestValue></Reference></SignedInfo><SignatureValue>Qcn+lzVekxof0yyqlUN/X9Ri9cy/E0AiWvrkSFpKxZ5iVsj33vI8sGE03XNj75lH776xx0HzaABotCqeBgyOwGbTdzuuVOwZuV6eSJcCUh8OYfFv0sG1zQoym2Mm0XXORjOONnavurWf88XMEpgNuXG95gneGPoWJIfALaRm61Y=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xtrMr9hlSPjCg/VUufB/5Hgq66UOsqLYtJ1tQW5S52R9z6lx15W71DRsPhvje82LvhvhUMT8dUD8PnAD7wK7r3ZfHTPOav+W0HzAjNfmxPaLy5fR8DP2kVRmm/MbFG10oxQm9NSBPuddXcLTRJ7Y8rdS0QipBTesf4PpY6hlKSs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQMMPeMIZUO7tClRIyF388AjANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAVABpAG0ALQBQAEMAXABUAGkAbTAeFw0xNTAzMDkwMDQzMzdaFw0xNjAzMDgwNjQzMzdaMB8xHTAbBgNVBAMeFABUAGkAbQAtAFAAQwBcAFQAaQBtMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDG2syv2GVI+MKD9VS58H/keCrrpQ6yoti0nW1BblLnZH3PqXHXlbvUNGw+G+N7zYu+G+FQxPx1QPw+cAPvAruvdl8dM85q/5bQfMCM1+bE9ovLl9HwM/aRVGab8xsUbXSjFCb01IE+511dwtNEntjyt1LRCKkFN6x/g+ljqGUpKwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGrDKnzs1yqbXQOQzQdUvd3nqPB8K00I8TFnTgJYGQO4q6QYz9KzUOZtPjIqAMRYGH7qMRRPXXTj6+ouPxVwDftfuH3H+8I2JmXnJDHENC9MlSBL/lDEuvpOyTTP++yNx6dphNPn6QmiwiUif55VlBcEglJGY9yVU9pPyDQ1vt7F</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
